@@ -1,0 +1,25 @@
+{
+  "id": "intruder",
+  "name": "Intruder",
+  "version": "0.1.0",
+  "description": "Burp Intruder-style attack tool for Caido: payload positions (§...§), Sniper/Battering Ram/Pitchfork/Cluster Bomb attack modes, payload sets and a results table.",
+  "author": {
+    "name": "Intruder Plugin"
+  },
+  "plugins": [
+    {
+      "kind": "frontend",
+      "id": "intruder-frontend",
+      "name": "Intruder Frontend",
+      "entrypoint": "frontend/script.js",
+      "backend": { "id": "intruder-backend" }
+    },
+    {
+      "kind": "backend",
+      "id": "intruder-backend",
+      "name": "Intruder Backend",
+      "runtime": "javascript",
+      "entrypoint": "backend/script.js"
+    }
+  ]
+}

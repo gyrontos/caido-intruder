@@ -1,0 +1,19 @@
+{
+  "name": "intruder-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc && node build.ts",
+    "bundle": "node build.ts",
+    "typecheck": "tsc",
+    "test": "esbuild test/engine.test.ts --bundle --platform=node --format=cjs --outfile=/tmp/engine.test.cjs && node /tmp/engine.test.cjs"
+  },
+  "devDependencies": {
+    "@caido/sdk-backend": "^0.58.3",
+    "@caido/sdk-frontend": "^0.58.3",
+    "@types/node": "^24.19.2",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.3"
+  }
+}
