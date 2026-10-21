@@ -23,7 +23,7 @@ intruder/
 ## Building
 
 ```bash
-npm install
+npm ci      # lockfile-exact install (npm install works too)
 npm test    # engine unit tests (attack modes, parsers, payload generators)
 npm run build
 ```
